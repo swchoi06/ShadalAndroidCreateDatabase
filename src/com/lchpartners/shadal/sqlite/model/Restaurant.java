@@ -7,6 +7,9 @@ public class Restaurant {
 	    String category;
 	    String openingHours;
 	    String closingHours;
+	    boolean flyer;
+	    boolean coupon;
+	    String couponString;
 	    
 	    // constructors
 	    public Restaurant() {
@@ -47,6 +50,18 @@ public class Restaurant {
 	    public void setClosingHours(String closingHours){
 	    	this.closingHours = closingHours;
 	    }
+
+	    public void setFlyer(boolean flyer){
+	    	this.flyer = flyer;
+	    }
+	    
+	    public void setCoupon(boolean coupon){
+	    	this.coupon = coupon;
+	    }
+	    
+	    public void setCouponString(String couponString){
+	    	this.couponString = couponString;
+	    }
 	 
 	    // getters
 	    public long getId() {
@@ -72,4 +87,19 @@ public class Restaurant {
 	    public String getClosingHours(){
 	    	return this.closingHours;
 	    }
+	    
+	    public boolean getFlyer(){
+	    	return this.flyer;
+	    }
+	    
+	    public boolean getCoupon(){
+	    	return this.coupon;
+	    }
+	    
+	    public String getCouponString(){
+	    	return this.couponString;
+	    }
+
+		public static void main(String[] args) {			
+		}
 }
